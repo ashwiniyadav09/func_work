@@ -33,5 +33,6 @@ function ashwini(){
 		}
 	}
 	$data2 = nikki('web');
+	echo "<pre>";
 	print_r($data2);
 ?>
