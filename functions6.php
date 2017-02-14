@@ -1,21 +1,35 @@
 <?php
 function cit(){
 $csvtu = array();
-$csvtu['college']= '';
-$csvtu[0]['cit']['1 year']['name'] = 'ashwini';
-$csvtu[0]['cit']['1 year']['age'] = '21';
-$csvtu[0]['cit']['1 year']['stream'] = 'cs';
-$csvtu[0]['cit']['1 year']['marks'] = '45';
+$csvtu['1 year'][0]['name'] = 'ashwini';
+$csvtu['1 year'][0]['age'] = '21';
+$csvtu['1 year'][0]['stream'] = 'cs';
+$csvtu['1 year'][0]['marks'] = '45';
 
-$csvtu[0]['cit']['2 year']['name'] = 'manisha';
-$csvtu[0]['cit']['2 year']['age'] = '21';
-$csvtu[0]['cit']['2 year']['stream'] = 'cs';
-$csvtu[0]['cit']['2 year']['marks'] = '45';
+$csvtu['1 year'][1]['name'] = 'naziya';
+$csvtu['1 year'][1]['age'] = '21';
+$csvtu['1 year'][1]['stream'] = 'cs';
+$csvtu['1 year'][1]['marks'] = '45';
 
-$csvtu[0]['cit']['3 year']['name'] = 'naziya';
-$csvtu[0]['cit']['3 year']['age'] = '21';
-$csvtu[0]['cit']['3 year']['stream'] = 'cs';
-$csvtu[0]['cit']['3 year']['marks'] = '45';
+$csvtu['2 year'][0]['name'] = 'manisha';
+$csvtu['2 year'][0]['age'] = '21';
+$csvtu['2 year'][0]['stream'] = 'cs';
+$csvtu['2 year'][0]['marks'] = '45';
+
+$csvtu['2 year'][1]['name'] = 'shruti';
+$csvtu['2 year'][1]['age'] = '21';
+$csvtu['2 year'][1]['stream'] = 'cs';
+$csvtu['2 year'][1]['marks'] = '45';
+
+$csvtu['3 year'][0]['name'] = 'kunal';
+$csvtu['3 year'][0]['age'] = '21';
+$csvtu['3 year'][0]['stream'] = 'cs';
+$csvtu['3 year'][0]['marks'] = '45';
+
+$csvtu['3 year'][1]['name'] = 'vidhi';
+$csvtu['3 year'][1]['age'] = '21';
+$csvtu['3 year'][1]['stream'] = 'cs';
+$csvtu['3 year'][1]['marks'] = '45';
 
 return $csvtu;
 }
@@ -28,21 +42,36 @@ return $csvtu;
 function csit(){
 
 $data = array();
-$data['college']= '';
-$data[1]['csit']['1 year']['name'] = 'ashwini';
-$data[1]['csit']['1 year']['age'] = '21';
-$data[1]['csit']['1 year']['stream'] = 'cs';
-$data[1]['csit']['1 year']['marks'] = '45';
 
-$data[1]['csit']['2 year']['name'] = 'manisha';
-$data[1]['csit']['2 year']['age'] = '21';
-$data[1]['csit']['2 year']['stream'] = 'cs';
-$data[1]['csit']['2 year']['marks'] = '45';
+$data['1 year'][0]['name'] = 'ashwini';
+$data['1 year'][0]['age'] = '21';
+$data['1 year'][0]['stream'] = 'cs';
+$data['1 year'][0]['marks'] = '45';
 
-$data[1]['csit']['3 year']['name'] = 'naziya';
-$data[1]['csit']['3 year']['age'] = '21';
-$data[1]['csit']['3 year']['stream'] = 'cs';
-$data[1]['csit']['3 year']['marks'] = '45';
+$data['1 year'][1]['name'] = 'ashwini';
+$data['1 year'][1]['age'] = '21';
+$data['1 year'][1]['stream'] = 'cs';
+$data['1 year'][1]['marks'] = '45';
+
+$data['2 year'][0]['name'] = 'manisha';
+$data['2 year'][0]['age'] = '21';
+$data['2 year'][0]['stream'] = 'cs';
+$data['2 year'][0]['marks'] = '45';
+
+$data['2 year'][1]['name'] = 'manisha';
+$data['2 year'][1]['age'] = '21';
+$data['2 year'][1]['stream'] = 'cs';
+$data['2 year'][1]['marks'] = '45';
+
+$data['3 year'][0]['name'] = 'naziya';
+$data['3 year'][0]['age'] = '21';
+$data['3 year'][0]['stream'] = 'cs';
+$data['3 year'][0]['marks'] = '45';
+
+$data['3 year'][1]['name'] = 'naziya';
+$data['3 year'][1]['age'] = '21';
+$data['3 year'][1]['stream'] = 'cs';
+$data['3 year'][1]['marks'] = '45';
 
 return $data;
 }
@@ -54,21 +83,21 @@ return $data;
 function shankara(){
 
 $node = array();
-$node['college']= '';
-$node[2]['shankara']['1 year']['name'] = 'ashwini';
-$node[2]['shankara']['1 year']['age'] = '21';
-$node[2]['shankara']['1 year']['stream'] = 'cs';
-$node[2]['shankara']['1 year']['marks'] = '45';
 
-$node[2]['shankara']['2 year']['name'] = 'manisha';
-$node[2]['shankara']['2 year']['age'] = '21';
-$node[2]['shankara']['2 year']['stream'] = 'cs';
-$node[2]['shankara']['2 year']['marks'] = '45';
+$node['1 year']['name'] = 'ashwini';
+$node['1 year']['age'] = '21';
+$node['1 year']['stream'] = 'cs';
+$node['1 year']['marks'] = '45';
 
-$node[2]['shankara']['3 year']['name'] = 'naziya';
-$node[2]['shankara']['3 year']['age'] = '21';
-$node[2]['shankara']['3 year']['stream'] = 'cs';
-$node[2]['shankara']['3 year']['marks'] = '45';
+$node['2 year']['name'] = 'manisha';
+$node['2 year']['age'] = '21';
+$node['2 year']['stream'] = 'cs';
+$node['2 year']['marks'] = '45';
+
+$node['3 year']['name'] = 'naziya';
+$node['3 year']['age'] = '21';
+$node['3 year']['stream'] = 'cs';
+$node['3 year']['marks'] = '45';
 
 return $node;
 }
@@ -83,9 +112,9 @@ function csvtu(){
 	$var3 = shankara();
 
 	$csvtu = array();
-	$csvtu['cit'] = $var1;
-	$csvtu['csit'] = $var2;
-	$csvtu['shankara'] = $var3;
+	$csvtu['csvtu']['cit'] = $var1;
+	$csvtu['csvtu']['csit'] = $var2;
+	$csvtu['csvtu']['shankara'] = $var3;
 
 	return $csvtu;
 }
