@@ -166,7 +166,7 @@ header('location:list.php');
 ?>
 
 <form method="post">
-username:<input type="text" name="username" value="<?php if(isset($username1)){echo $username1;}?>" /><br>
+username:<input type="text" name="username"value="<?php if(isset($username1)){echo $username1;}?>" /><br>
 
 		<?php if($user_error!=""){ ?>
 			<p style ="color:red">
