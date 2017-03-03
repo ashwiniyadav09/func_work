@@ -1,5 +1,5 @@
 <?php
-
+require 'config.php';
 $name_error = "";
 $add_error = "";
 $contact_error = "";
@@ -40,9 +40,15 @@ if(isset($_POST['submit'])){
 	echo 'address=' . $_POST['address'] .'<br>';
 	echo 'contact=' . $_POST['contact'] .'<br>';
 	echo 'email=' . $_POST['email'] .'<br>';
-	echo 'cities=' . $_POST['cities'] .'<br>';
+	
 	echo 'pincode=' . $_POST['pincode'] .'<br>';
-	echo 'field=' .implode($_POST['field']) .'<br>';
+	
+
+	$insert = "INSERT INTO details (company_name,address,contact,email,pincode) VALUES ('". $_POST['company-name']."', '".$_POST['address']."', '".$_POST['contact']."', '".$_POST['email']."', '".$_POST['pincode']."') ";
+ //echo $insert;exit;
+	  mysqli_query($connection,$insert);
+	  header('location:form_db.php');
+
 
     
 
@@ -91,18 +97,7 @@ pincode: <input type = "text" name="pincode" value = "<?php if(isset($_POST['pin
 			<?php echo $pincode_error;?>
 		</p>
 		<?php }?>
+<input type="submit" name="submit" value="submit">
 
-cities:
-    <select name="cities"><br>
-	<option value = "ahemdabad">ahemdabad</option><br>
-	<option value = "delhi">delhi</option><br>
-	<option value = "mumbai">mumbai</option><br>
-	<option value = "pune">pune</option><br>
 
-	
-field: <input type ="checkbox" name="field[]" value="it" checked="checked"/>IT<br>
-       <input type ="checkbox" name="field[]" value="software" />software<br>
-       <input type ="checkbox" name="field[]" value="hardware" />hardware<br>
-       <input type ="checkbox" name="field[]" value="management" />management<br>
-       <input type ="submit" name="submit" value="submit">
  </form>
